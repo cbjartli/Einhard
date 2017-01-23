@@ -5,7 +5,7 @@ from flask_restful import Resource, Api
 from marshmallow import Schema, fields, pprint
 from marshmallow.decorators import validates_schema
 
-REGISTERED_TYPES = ['real', 'integer', 'discreet']
+REGISTERED_TYPES = ['real', 'integer', 'discrete']
 
 class DatatypeSchema(Schema):
     name = fields.Str()
